@@ -1,30 +1,106 @@
-# shadow-guidance
+# 🖋️ Sketch-Based 3D Shape Modeling from Sparse Point Clouds
 
-> 3D shadow guidance for model generation
+An interactive human-in-the-loop system for 3D model reconstruction from sparse point clouds using freehand sketches. This project empowers users to iteratively sketch and refine 3D shapes, offering a novel and intuitive way to enhance traditional surface reconstruction with cognitive perception.
 
-## Build Setup
+![Demo Interface](assets/interface_demo.png) <!-- 替换为你repo中上传的demo截图路径 -->
 
-``` bash
+## 🔗 Project Links
+
+- 📄 [Paper on arXiv](https://arxiv.org/abs/2201.11287)
+- 📺 [Demo Video on YouTube](https://www.youtube.com/watch?v=0H19NyXDRJE)
+
+---
+
+## 🛠️ Development Setup
+
+If you're running the front-end interface (e.g., Vue.js app for sketching and visualization):
+
+```bash
 # install dependencies
 npm install
-
-# serve with hot reload at localhost:8080
+# start dev server with hot reload
 npm run dev
-
-# build for production with minification
+# build for production
 npm run build
-
-# build for production and view the bundle analyzer report
+# build and analyze production bundle
 npm run build --report
-
-# run unit tests
+# unit tests
 npm run unit
-
-# run e2e tests
+# end-to-end tests
 npm run e2e
-
 # run all tests
 npm test
-```
 
-For a detailed explanation on how things work, check out the [guide](http://vuejs-templates.github.io/webpack/) and [docs for vue-loader](http://vuejs.github.io/vue-loader).
+## 🧠 Key Features
+
+- **Human-in-the-loop Optimization**: Users provide intuitive sketches to guide 3D shape retrieval and refinement.
+- **Sketch-based Retrieval**: Search and retrieve 3D models based on freehand contour sketches.
+- **Point Cloud Integration**: Align retrieved models with sparse input point clouds using ICP (Iterative Closest Point).
+- **Interactive UI**: Includes sketching tools, undo/redo, and 3D model manipulation.
+- **Editable Contours**: Extract and edit model contours for iterative refinement.
+
+---
+
+## 🖼️ System Overview
+
+The modeling pipeline includes:
+1. Input sparse point cloud
+2. User sketch based on viewpoint
+3. Sketch-based 3D model retrieval
+4. Model overlay and ICP alignment
+5. Contour extraction and sketch editing
+6. Model re-retrieval based on refined sketch
+7. Repeat until satisfactory model obtained
+
+![System Workflow](assets/system_workflow.png) <!-- 替换为系统概览图路径 -->
+
+---
+
+## 📁 Dataset
+
+- Based on **SHREC 2012** dataset
+- 5 categories: *teacup, chair, table, vase, animal*
+- Includes 10,200 contour images for sketch-based retrieval
+- Retrieval backend powered by [OpenSSE](https://github.com/zddhub/opensse)
+
+---
+
+## 🧪 User Study Results
+
+| Metric                        | Avg. Value  |
+|------------------------------|-------------|
+| Times of Sketching           | 1.67        |
+| Sketch-Model Similarity      | 0.61        |
+| ICP Alignment Error          | 5.37 × 10⁻² |
+| User Satisfaction (1–5)      | 3.83        |
+| Interface Usability (1–5)    | 4.33        |
+
+---
+
+## 🛠️ Tech Stack
+
+- Python, OpenCV, Open3D
+- OpenSSE for sketch retrieval
+- Qt-based UI for interaction (or PyQt if replicated)
+- ICP alignment for point cloud-model registration
+
+---
+
+## 📷 Screenshots
+
+![Sketch and Retrieval](assets/sketch_example.png) <!-- 替换为草图示例图路径 -->
+![Contour Editing](assets/contour_editing.png) <!-- 替换为轮廓修改示例图 -->
+
+---
+
+## 📜 Citation
+
+If you find this project useful, please cite:
+
+```bibtex
+@article{du2022sketch3d,
+  title={Sketch-Based 3D Shape Modeling from Sparse Point Clouds},
+  author={Du, Xusheng and He, Yi and Yang, Xi and Chang, Chia-Ming and Xie, Haoran},
+  journal={arXiv preprint arXiv:2201.11287},
+  year={2022}
+}

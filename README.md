@@ -74,8 +74,10 @@ The modeling pipeline includes:
 
 ## 📷 Screenshots
 
-![Sketch and Retrieval](assets/sketch_example.png) <!-- 替换为草图示例图路径 -->
-![Contour Editing](assets/contour_editing.png) <!-- 替换为轮廓修改示例图 -->
+![Sketch and Retrieval](./example.png) 
+
+> Images of the users experiment following our proposed complete process: (a) sparse point cloud, (b) sketch drawn, (c) point cloud and mismatched model after performing ICP alignment, (d) contours of the current model, (e) (g) modi cation of the model contour to match the point cloud features, (h) target model.
+>
 
 ---
 

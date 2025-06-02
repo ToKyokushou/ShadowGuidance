@@ -72,7 +72,7 @@ The modeling pipeline includes:
 
 ---
 
-## 📷 Screenshots
+## 📷 Example
 
 ![Sketch and Retrieval](./example.png) 
 

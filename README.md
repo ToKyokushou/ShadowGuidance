@@ -11,26 +11,6 @@ An interactive human-in-the-loop system for 3D model reconstruction from sparse 
 
 ---
 
-## 🛠️ Development Setup
-
-If you're running the front-end interface (e.g., Vue.js app for sketching and visualization):
-
-```bash
-# install dependencies
-npm install
-# start dev server with hot reload
-npm run dev
-# build for production
-npm run build
-# build and analyze production bundle
-npm run build --report
-# unit tests
-npm run unit
-# end-to-end tests
-npm run e2e
-# run all tests
-npm test
-
 ## 🧠 Key Features
 
 - **Human-in-the-loop Optimization**: Users provide intuitive sketches to guide 3D shape retrieval and refinement.

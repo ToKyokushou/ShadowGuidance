@@ -4,6 +4,9 @@ An interactive human-in-the-loop system for 3D model reconstruction from sparse 
 
 ![Demo Interface](./UI.png) 
 
+> *Demo Interface: (a) The user is drawing sketches in the proposed user interface. (b1) (b3) show the results before and after the model contour extraction, and (c1) and (c2) show the overlap of the point cloud and the model before and after ICP alignment, respectively.
+>
+
 ## 🔗 Project Links
 
 - 📄 [Paper on arXiv](https://arxiv.org/abs/2201.11287)
@@ -33,6 +36,9 @@ The modeling pipeline includes:
 7. Repeat until satisfactory model obtained
 
 ![System Workflow](./overview.png) 
+
+> *System overview of the proposed model extraction with eight steps: (1) input of point cloud; (2) user sketch; (3) sketch retrieval of 3D models; (4) overlay with 3D model; (5) extraction of model contours for redrawing; (6) model re-retrieval; (7) repeat steps (4) (6); (8) obtain the nal model.
+>
 
 ---
 

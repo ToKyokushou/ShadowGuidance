@@ -1,4 +1,4 @@
-# 🖋️ Sketch-Based 3D Shape Modeling from Sparse Point Clouds
+# Sketch-Based 3D Shape Modeling from Sparse Point Clouds
 
 An interactive human-in-the-loop system for 3D model reconstruction from sparse point clouds using freehand sketches. This project empowers users to iteratively sketch and refine 3D shapes, offering a novel and intuitive way to enhance traditional surface reconstruction with cognitive perception.
 

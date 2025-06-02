@@ -2,7 +2,7 @@
 
 An interactive human-in-the-loop system for 3D model reconstruction from sparse point clouds using freehand sketches. This project empowers users to iteratively sketch and refine 3D shapes, offering a novel and intuitive way to enhance traditional surface reconstruction with cognitive perception.
 
-![Demo Interface](assets/interface_demo.png) <!-- 替换为你repo中上传的demo截图路径 -->
+![Demo Interface](./UI.png) 
 
 ## 🔗 Project Links
 
@@ -32,7 +32,7 @@ The modeling pipeline includes:
 6. Model re-retrieval based on refined sketch
 7. Repeat until satisfactory model obtained
 
-![System Workflow](assets/system_workflow.png) <!-- 替换为系统概览图路径 -->
+![System Workflow](./overview.png) 
 
 ---
 
